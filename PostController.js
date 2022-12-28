@@ -10,6 +10,39 @@ class PostController {
             res.status(500).json(e)
         }
     }
+
+    async getAll(req, res) {
+        try {
+            const posts = await Post.find()
+            res.json(posts)
+        } catch (e) {
+            res.status(500).json(e)
+        }
+    }
+
+    async getOne(req, res) {
+        try {
+
+        } catch (e) {
+            res.status(500).json(e)
+        }
+    }
+
+    async update(req, res) {
+        try {
+
+        } catch (e) {
+            res.status(500).json(e)
+        }
+    }
+
+    async delete(req, res) {
+        try {
+
+        } catch (e) {
+            res.status(500).json(e)
+        }
+    }
 }
 
 export default new PostController()   //экспортируем объект созданный из класса контроллер
